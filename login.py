@@ -7,7 +7,7 @@ r =  s.get('http://localhost')
 
 #hiddenパラメータの取得
 soup = BeautifulSoup(r.text, "html.parser")
-token = soup.select_one('input[name="username"]')
+token = soup.select_one('input[name="token"]')
 
 # HTTPのパラメータを表すdictを渡す
 data = {
